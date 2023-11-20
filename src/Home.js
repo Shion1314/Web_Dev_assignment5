@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Outlet, Link } from "react-router-dom";
 
 export default function Home() {
     return (
@@ -14,6 +14,9 @@ export default function Home() {
           Use the link below to get started and enjoy your journey through
           the vast collection of the Open Library.
         </p>
+        <button>
+        <Link to="author's_Book/">Searching for Author's Book</Link>
+      </button>
       </div>
     );
   };
